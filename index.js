@@ -1,4 +1,4 @@
-
+// Pruebas de Git
     const express = require('express');
     const mongoose = require('mongoose')
     const fsPromises = require('fs/promises')
@@ -85,12 +85,12 @@
     // Conexion a la BD
     mongoose.connect( "mongodb+srv://jvreyesa:valerialr2@cluster0.e0j5c.mongodb.net/kodemia")
     .then( () =>{
-        console.log("Se conecto a la bd")
+        console.log("** Se conecto a la bd")
 
         //Levanta el servidor
         app.listen(8080,()=>{
 
-            console.log("Ya estamos escuchando en el puerto 8080 en express")
+            console.log("** Servicio Activo en puerto 8080 ")
 
         })
 
